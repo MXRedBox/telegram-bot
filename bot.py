@@ -1,7 +1,7 @@
 from elproblemo import token
 import telebot
 
-bot = telebot.Telebot(token["TOKEN"])
+bot = telebot.TeleBot(token["TOKEN"])
 
 @bot.message_handler(commands=["start"])
 def start_func(message):
